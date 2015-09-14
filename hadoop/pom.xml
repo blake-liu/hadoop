@@ -24,6 +24,11 @@
 			<artifactId>hadoop-client</artifactId>
 			<version>2.5.2</version>
 		</dependency>
+		<dependency>
+		    <groupId>com.twitter</groupId>
+		    <artifactId>parquet-hadoop</artifactId>
+		    <version>1.6.0rc3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -65,7 +70,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>example.WordCount</mainClass>
+							<!-- <mainClass>example.WordCount</mainClass> -->
 						</manifest>
 					</archive>
 				</configuration>
